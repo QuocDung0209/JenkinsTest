@@ -1,0 +1,14 @@
+<table class="table table-striped text-center">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col" *ngFor="let item of headerTitles">{{item}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of gridData" (click)="onRowClick($event)">
+      <td class="font-weight-bold">{{item.field | titlecase}}</td>
+      <td>{{item.current}}</td>
+      <td>{{item.new}}</td>
+    </tr>
+  </tbody>
+</table>

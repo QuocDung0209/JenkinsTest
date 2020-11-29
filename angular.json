@@ -50,9 +50,15 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
+              "./node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/@progress/kendo-theme-default/dist/all.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -145,6 +151,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-training"
+    }
+  },
+  "defaultProject": "angular-training",
+  "cli": {
+    "analytics": "efa3f35e-a569-4d10-bc97-8ea046d73a4e"
+  }
 }
